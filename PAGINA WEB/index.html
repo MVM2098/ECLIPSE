@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eclipse Gaming</title>
+  <link href="css/estilos.css" rel="stylesheet">
+  <script src="js/funciones.js"></script>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="menu-icon">
+        <i class="fas fa-bars"></i>
+      </div>
+      <ul class="menu">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="equipo.html">Equipo</a></li>
+        <li><a href="noticias.html">Noticias</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+    <img class="logo" src="img/ECLIPSE GAMING.jpg" alt="Logo Eclipse Gaming">
+  </header>
+
+  <main>
+
+    <section id="inicio">
+      <h1>Bienvenido a Eclipse Gaming</h1>
+      <hr>
+      <div class="inicio-content">
+        <div class="merchandising">
+          <h2 class="box">Merchandising</h2>
+          <p>¡Obtén los productos oficiales de Eclipse Gaming!</p>
+          <a href="#" onclick="mostrarMensaje()" class="box">Ver tienda</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="noticias">
+      <h2>Últimas Noticias</h2>
+      <hr>
+      <article>
+        <h3>SE INICIA EL PROYECTO ECLIPSE GAMING</h3>
+        <img src="img/ECLIPSE GAMING.jpg" alt="Noticia 1" class="circular-image">
+      </article>
+    </section>
+
+    <section id="equipo">
+      <h2>Nuestro Equipo</h2>
+      <hr>
+      <div class="carousel-container">
+      <div class="carousel">
+        <div class="slide">
+          <a href="equipo.html"><img src="img/valo.jpg" alt="Equipo de Valorant">Equipo de Valorant</a>
+        </div>
+        <div class="slide">
+          <a href="equipo.html"><img src="img/csg.jpg" alt="Equipo de CS:GO">Equipo de CS:GO</a>
+        </div>
+        <div class="slide">
+          <a href="equipo.html"><img src="img/rock.jpg" alt="Equipo de Rocket League">Equipo de Rocket League</a>
+        </div>
+        <div class="slide">
+          <a href="equipo.html"><img src="img/fornite.jpg" alt="Equipo de Fortnite">Equipo de Fortnite</a>
+        </div>
+      </div>
+      </div>
+    </section>
+
+    <section id="contacto">
+      <h2>Contacto</h2>
+      <hr>
+      <p>Para cualquier consulta o patrocinio, puedes comunicarte con nosotros a través de:</p>
+      <ul>
+        <li>Teléfono: 682632191</li>
+        <li>Email: eclipsegmaing@gmail.es</li>
+        <li>Redes Sociales: <a href="https://www.instagram.com/">ECLIPSE GAMING</a></li>
+      </ul>
+    </section>
+
+    <section id="section-patrocinadores">
+      <h2>Patrocinadores</h2>
+      <hr>
+      <div class="patrocinadores-lista">
+        <a href="https://eu.puma.com/es/es/home?gclid=CjwKCAjw1YCkBhAOEiwA5aN4AcrL68HEe2Uv1dc8v4WsvuIf2TiVWvQ1GGQaJIUFQvJ9e0eOdKurABoCx5wQAvD_BwE"><img class="patrocinador-img" src="img/puma.png" alt="Patrocinador 1"></a>
+        <a href="https://gfuel.com/"><img class="patrocinador-img" src="img/gifuel.png" alt="Patrocinador 2"></a>
+        <a href="https://www.logitech.com/es-es"><img class="patrocinador-img" src="img/log.png" alt="Patrocinador 3"></a>
+      </div>
+    </section>
+
+    <section id="section-contacto">
+      <h2>Contacto</h2>
+      <hr>
+      <form action="procesar-formulario.php" method="POST">
+        <div>
+          <label for="nombre">Nombre:</label>
+          <input type="text" id="nombre" name="nombre" required>
+        </div>
+        <div>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div>
+          <label for="mensaje">Mensaje:</label>
+          <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+        </div>
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>Derechos de autor &copy; 2023 Eclipse Gaming. Todos los derechos reservados.</p>
+  </footer>
+</body>
+
+</html>

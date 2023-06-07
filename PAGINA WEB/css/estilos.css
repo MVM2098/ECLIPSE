@@ -1,0 +1,336 @@
+* {
+  font-family: fantasy;
+  text-decoration: none;
+  color:inherit
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  color: rgb(200, 200, 200);
+  background: linear-gradient(to bottom, #6e0d9b, #000000, #ffffff);
+  font-size: 30px;
+}
+
+.logo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+}
+
+nav {
+  background-color: #333;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-image: linear-gradient(to bottom, #000000, #333333);
+}
+
+.menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.menu li {
+  margin-right: 20px;
+}
+
+.menu li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.menu-icon {
+  display: none;
+}
+
+header {
+  background-color: #39383a;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-image: linear-gradient(to bottom, #000000, #333333);
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  font-family: fantasy;
+  font-size: 30px;
+}
+
+nav ul li {
+  margin-right: 20px;
+}
+
+nav ul li:last-child {
+  margin-right: 0;
+}
+
+nav ul li a {
+  color: black;
+  font-weight: semibold;
+  text-decoration: none;
+}
+
+main {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+section {
+  margin-bottom: 30px;
+}
+
+h1 {
+  color: rgb(200, 200, 200);
+  font-size: 40px;
+}
+
+.inicio-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.merchandising {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.box {
+  display: block;
+  margin-bottom: 10px;
+  width: 300px;
+}
+
+.carousel-container {
+  max-width: 100%;
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+
+.carousel {
+  display: flex;
+  width: 100%;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+}
+
+.slide {
+  flex-shrink: 0;
+  width: 100%;
+  scroll-snap-align: center;
+  margin-right: 40px;
+}
+
+.slide:last-child {
+  margin-right: 0;
+}
+
+.slide img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 5px;
+}
+
+.patrocinador-img {
+  width: 140px; 
+  height: auto;
+  margin: 10px; 
+}
+
+
+#section-contacto form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 400px;
+}
+
+#section-contacto form div {
+  margin-bottom: 10px;
+}
+
+#section-contacto form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+#section-contacto form input,
+#section-contacto form textarea {
+  width: 100%;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+#section-contacto form button {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #222222;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  background-image: linear-gradient(to bottom, #000000, #333333);
+}
+
+.circular-image {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto;
+}
+
+.team-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  color: #000000;
+}
+
+.team-box {
+  width: 300px;
+  background-color: #f9f9f9;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.team-box h3 {
+  margin-top: 0;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.team-members p {
+  margin-bottom: 5px;
+}
+
+
+/* Estilos para dispositivos móviles */
+@media only screen and (max-width: 589px) {
+  .logo {
+    width: 100px;
+    height: 100px;
+  }
+
+  .menu {
+    display: none;
+    text-align: center;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    padding: 10px 0;
+    z-index: 1;
+  }
+
+  .menu li {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  .menu li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+  }
+
+  .menu.show {
+    display: flex;
+  }
+
+  .menu-icon {
+    display: block;
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+  }
+
+  .inicio-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .merchandising {
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  .carousel {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .slide {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  #section-contacto form {
+    max-width: none;
+  }
+
+  #section-contacto form input,
+  #section-contacto form textarea {
+    width: 100%;
+  }
+}
+
+
+.jugador {
+  background-color: #39383a;
+  padding: 20px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.nombre {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.edad {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.estudios {
+  font-size: 18px;
+}
+
+
